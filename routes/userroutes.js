@@ -120,7 +120,7 @@ function router(){
         res.header("Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS")
         const id=req.params.id;
         if(req.file){
-            img='http://localhost:3000/images/'+req.file.filename;
+            img='/api/images/'+req.file.filename;
         }
         else{
             img=req.body.img;

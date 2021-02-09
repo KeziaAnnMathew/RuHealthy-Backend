@@ -49,7 +49,7 @@ app.post('/login/admin',function(req,res){
 app.post('/adduser', function(req,res){
     res.header("Access-Control-Allow-Origin", "*")
     res.header("Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS")
-    img='http://localhost:3000/images/profile.png';
+    img='/api/images/profile.png';
         var item = {
             fname:req.body.user.fname,
             lname:req.body.user.lname,
